@@ -1,9 +1,10 @@
-var express = require("express");
-var bodyParser = require("body-parser");
-var path = require('path');
+const express = require("express");
+const bodyParser = require("body-parser");
+const path = require('path');
+//CAN I ALSO JUST ADD THE BOOTSTRAP NPM AND NOT WORRY ABOUT THE CDN LINKS IN HTML FILES?
 
-var app = express();
-var PORT = process.env.PORT || 3000;
+const app = express();
+const PORT = process.env.PORT || 3000;
 
 // Sets up the Express app to handle data parsing
 app.use(bodyParser.json());
