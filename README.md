@@ -1,4 +1,6 @@
-Express Friend Finder is a full-stack application that matches people together based on a series of questions each person answers.
+#Express Friend Finder 
+
+This is a full-stack application that matches people together based on a series of questions each person answers.
 
 The app will display the name and picture of the user with the best overall match.
 

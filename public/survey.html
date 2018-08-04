@@ -11,8 +11,7 @@
     <script src="https://code.jquery.com/jquery.js"></script>
 
     <!-- BOOTSTRAP -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em"
@@ -68,7 +67,7 @@
                     Question 2
                 </h4>
                 <h5>A staycation is your idea of traveling?</h5>
-                <select class="chosen-select" id="q1">
+                <select class="chosen-select" id="q2">
                     <option value="1">1 (Strongly Disagree)</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
@@ -82,7 +81,7 @@
                     Question 3
                 </h4>
                 <h5>A good night out is when you and your friends hit the dance floor?</h5>
-                <select class="chosen-select" id="q1">
+                <select class="chosen-select" id="q3">
                     <option value="1">1 (Strongly Disagree)</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
@@ -95,7 +94,7 @@
                     Question 4
                 </h4>
                 <h5>Watching a movie sounds better than a hike to you?</h5>
-                <select class="chosen-select" id="q1">
+                <select class="chosen-select" id="q4">
                     <option value="1">1 (Strongly Disagree)</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
@@ -108,7 +107,7 @@
                     Question 5
                 </h4>
                 <h5>You find things normally come easy in life?</h5>
-                <select class="chosen-select" id="q1">
+                <select class="chosen-select" id="q5">
                     <option value="1">1 (Strongly Disagree)</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
@@ -121,7 +120,7 @@
                     Question 6
                 </h4>
                 <h5>You prefer a going to a concert over going to a play?</h5>
-                <select class="chosen-select" id="q1">
+                <select class="chosen-select" id="q6">
                     <option value="1">1 (Strongly Disagree)</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
@@ -134,7 +133,7 @@
                     Question 7
                 </h4>
                 <h5>You consider anything related to sports boring?</h5>
-                <select class="chosen-select" id="q1">
+                <select class="chosen-select" id="q7">
                     <option value="1">1 (Strongly Disagree)</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
@@ -147,7 +146,7 @@
                     Question 8
                 </h4>
                 <h5>After a long day you prefer to unwind with friends and a beer?</h5>
-                <select class="chosen-select" id="q1">
+                <select class="chosen-select" id="q8">
                     <option value="1">1 (Strongly Disagree)</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
@@ -160,7 +159,7 @@
                     Question 9
                 </h4>
                 <h5>If you don't camp, you're not living?</h5>
-                <select class="chosen-select" id="q1">
+                <select class="chosen-select" id="q9">
                     <option value="1">1 (Strongly Disagree)</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
@@ -173,7 +172,7 @@
                     Question 10
                 </h4>
                 <h5>West Coast rules over East Coast?</h5>
-                <select class="chosen-select" id="q1">
+                <select class="chosen-select" id="q10">
                     <option value="1">1 (Strongly Disagree)</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
@@ -184,13 +183,17 @@
                 <br>
                 <br>
 
-                <button type="submit" class="registerbtn btn">
-                    <p value="✓" id="para">&#x2611; Submit</p>
-                </button>
+
                 <div class="hr"></div>
             </div>
 
         </form>
+
+        <div class="submitBtn">
+            <button class="registerbtn btn survey-submit">
+                <p value="✓" id="para">&#x2611; Submit</p>
+            </button>
+        </div>
 
     </div>
 
@@ -201,11 +204,11 @@
 
     <div class="footer">
         <footer>
-            <a class="foot" href="survey.html">
+            <a class="foot" href="/api/friends">
                 <span class="ftlinks">API
                     <br> </span>
             </a>
-            <a class="foot" href="home.html">
+            <a class="foot" href="/home">
                 <span class="ftlinks">Home</span>
             </a>
         </footer>
@@ -225,8 +228,8 @@
                 <img id="matchPic">
             </div>
             <div class="modal-body">
-                    <h5 id="#matchName"></h5>
-                    <img id="matchPic">
+                <h5 id="#matchName"></h5>
+                <img id="matchPic">
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -240,9 +243,11 @@
 
 
 
-    <script type="text/javascript" src="friends.js">
+    <!-- <script type="text/javascript" src="friends.js"> -->
 
-        $(".btn").on("click", function (event) {
+    <script>
+
+        $(".survey-submit").on("click", function (event) {
             event.preventDefault();
 
 
@@ -263,8 +268,12 @@
                 ]
             };
 
+            console.log(newFriend);
+
 
             $.post("/api/friends", newFriend, function (data) {
+
+                console.log("this is data coming back from server: ", data);]
                 $("#matchName").text(data.name);
                 $("#matchPic").attr("src", data.photo);
             });
