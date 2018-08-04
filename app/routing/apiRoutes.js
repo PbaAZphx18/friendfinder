@@ -1,4 +1,4 @@
-var friendData = require("data/friends.js")  //-------trying to target home.html???
+var friendData = require("../data/friends");  
 
 module.exports = function(app) {
 
